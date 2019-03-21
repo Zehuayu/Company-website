@@ -1,0 +1,35 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}
+    {% if title %}
+        {{ title }} | Flask App
+    {% else %}
+        Flask app
+    {% endif %}
+{% endblock %}
+
+{% block navbar %}
+  {% include 'navbar.html' %}
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul class=flashes>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+              {% endwith %}
+        </div>
+    </div>
+    {% block app_content %}
+    {% endblock %}
+</div>
+{% endblock %}
