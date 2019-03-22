@@ -1,6 +1,19 @@
 <nav class="navbar navbar-default">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- <div id='corpTitle' class='corpTitle corpTitle2' fontPatternTitle='false' style='top:93px;left:174px;;cursor:pointer'  _linkType='0' _href='/index.jsp'>
+            <h1 class='titleWrapper'>
+              <span style="color: rgb(75, 75, 75);">
+            
+                <div style=" " class="newPrimaryTitle">
+              
+                  <span style="font-size: 20px;">南昌建筑资质代办行业龙头企业</span>
+            </div>
+          
+          </span>
+        </h1>
+      </div> -->
+      <div class="col-md-1"></div>
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -8,32 +21,190 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">MY Blog</a>
+        <a class="navbar-brand" href="/">服务类别</a>
       </div>
   
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
         <ul class="nav navbar-nav">
+            {% if  current_user.is_authenticated %}
           <li class="{% if request.endpoint == 'index' %}active{% endif %}">
-            <a href="{{ url_for('index') }}">Home </a>
+            <a href="{{ url_for('index') }}">首页 </a>
           </li>
+          <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+              <a href="{{ url_for('index') }}">资质转让 </a>
+            </li>
+            <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                <a href="{{ url_for('index') }}">资质代办</a>
+              </li>
+              <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                  <a href="{{ url_for('index') }}">职称评审</a>
+                </li>
+                <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                    <a href="{{ url_for('index') }}">证书猎头</a>
+                  </li>
+                  <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                      <a href="{{ url_for('index') }}">行业百科</a>
+                    </li>
+                    <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                        <a href="{{ url_for('index') }}">成功案例</a>
+                      </li>
+                      <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                          <a href="{{ url_for('index') }}">人才招聘</a>
+                        </li>
+                        <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                            <a href="{{ url_for('index') }}">关于我们</a>
+                          </li>
           <!-- <li><a href="{{ url_for('index') }}">Home</a></li> -->  
+          {% endif %} 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {% if not current_user.is_authenticated %}
-            <li class="{% if request.endpoint == 'Sign In' %}active{% endif %}">
+            <li class="{% if request.endpoint == 'login' %}active{% endif %}">
                 <a href="{{ url_for('login') }}">Sign In </a>
               </li> 
-            <li class="{% if request.endpoint == 'Sign Up' %}active{% endif %}">
+            <li class="{% if request.endpoint == 'login' %}active{% endif %}">
               <a href="{{ url_for('register') }}">Sign Up </a>
             </li>  
           {% else %}
-              <li class="{% if request.endpoint == 'LogOut' %}active{% endif %}">
+              <li class="{% if request.endpoint == 'index' %}active{% endif %}">
                 <a href="{{ url_for('logout') }}">LogOut </a>
               </li>  
             {% endif %}       
          </ul>                                        
           
       </div><!-- /.navbar-collapse -->
+      <!-- 菜单栏 -->
+      <div class="menu" style='background-image:url({{imgone}})'>
+                <ul>
+                    {% if  current_user.is_authenticated %}
+                  <li> 施工总承包 
+                    <div class="submenu">
+                      <div class="subleft">
+                        <dl>
+                          <dt></dt>
+                          <dd> <a href="http://www.jinxiniu168.com/h-nd-j-64-1.html" target="_blank">建筑工程</a> 
+                            <a href="http://www.jinxiniu168.com/h-nd-j-11-1.html" target="_blank">市政公用工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-j-67-1.html" target="_blank">机电工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-j-69-1.html" target="_blank">通信工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-j-10-1.html" target="_blank">电力工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-6-110_2149.html" target="_blank">公路工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-j-9-1.html" target="_blank">水利水电工程</a>
+                              <a href="http://www.jinxiniu168.com/h-nd-68-110_2150.html" target="_blank">冶金工程</a>
+                               <a href="http://www.jinxiniu168.com/h-nd-65-110_2147.html" target="_blank">石油化工工程</a> <a href="http://www.jinxiniu168.com/h-nd-j-66-1.html" target="_blank">矿山工程</a> </dd>
+                        </dl>
+                      </div>
+                      
+                    </div>
+                  </li>
+    
+                  <li> 施工专业承包
+                    <div class="submenu">
+                        <div class="subleft">
+                          <dl>
+                            <dt></dt>
+                            <dd> <a href="http://www.jinxiniu168.com/h-nd-j-74-1.html" target="_blank">电子与智能化工程</a>
+                            <a href="http://www.jinxiniu168.com/h-nd-82-110_2157.html" target="_blank">环保工程</a> 
+                            <a href="http://www.hfjinxiniu.com/h-nd-179.html#_np=110_2155" target="_blank">消防设施工程</a>
+                            <a href="http://www.hfjinxiniu.com/h-nd-89.html#_np=110_2158" target="_blank">桥梁工程</a>
+                            <a href="http://www.jinxiniu168.com/h-nd-88-110_2158.html" target="_blank">特种工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-j-86-1.html" target="_blank">建筑机电安装工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-j-73-1.html" target="_blank">防水防腐保温工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-j-79-1.html" target="_blank">建筑装饰装修工程</a>
+                             <a href="http://www.hfjinxiniu.com/h-nd-91.html#_np=110_2157" target="_blank">水利水电机电安装工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-83-110_2157.html" target="_blank">建筑幕墙工程</a> 
+                             <a href="http://www.hfjinxiniu.com/h-nd-182.html#_np=110_2454" target="_blank">输变电工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-71-110_2155.html" target="_blank">钢结构工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-77-110_2156.html" target="_blank">模板脚手架</a>
+                             <a href="http://www.hfjinxiniu.com/h-nd-181.html#_np=110_2454" target="_blank">河湖整治工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-90-110_2158.html" target="_blank">预拌混凝土</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-72-110_2155.html" target="_blank">地基基础工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-75-110_2155.html" target="_blank">公路交通工程</a>
+                             <a href="http://www.jinxiniu168.com/h-nd-81-110_2156.html" target="_blank">公路路面工程</a>
+                             <a href="http://www.hfjinxiniu.com/h-nd-84.html#_np=110_2157" target="_blank">公路路基工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-87-110_2157.html" target="_blank">古建筑工程</a> 
+                             <a href="http://www.jinxiniu168.com/h-nd-78-110_2156.html" target="_blank">城市及道路照明工程</a></dd>
+                          </dl>
+                        </div>
+                    </div>
+                
+                  </li>
+                  <li> 企业信用证书
+                        <div class="submenu">
+                            <div class="subleft">
+                              <dl>
+                                <dt></dt>
+                                <dd> <a href="http://www.jinxiniu168.com/h-nd-164-110_2263.html" target="_blank">AAA级诚信企业</a> 
+                                <a href="http://www.jinxiniu168.com/h-nd-167-110_2264.html" target="_blank">中国建筑行业AAA级信用企业</a>
+                                 <a href="http://www.jinxiniu168.com/h-nd-168-110_2265.html" target="_blank">AAA级企业投标信用等级</a> </dd>
+                              </dl>	  
+                            </div>
+                        </div>
+                      </li>
+                      
+                      
+                      <li> 工程设计资质
+                        <div class="submenu">
+                            <div class="subleft">
+                              <dl>
+                                <dt></dt>
+                                <dd> <a href="http://www.jinxiniu168.com/h-nd-115-110_2186.html" target="_blank">工程设计综合</a>
+                                <a href="http://www.hfjinxiniu.com/h-nd-97.html#_np=110_2161" target="_blank">建筑智能化系统</a>
+                                <a href="http://www.hfjinxiniu.com/h-nd-98.html#_np=110_2162" target="_blank">建筑幕墙工程</a> 
+                                <a href="http://www.hfjinxiniu.com/h-nd-100.html#_np=110_2165" target="_blank">轻型钢结构工程</a> 
+                                 <a href="http://www.jinxiniu168.com/h-nd-116-110_2187.html" target="_blank">消防设施工程</a> 
+                                 <a href="http://www.jinxiniu168.com/h-nd-96-110_2160.html" target="_blank">照明工程</a>
+                                  <a href="http://www.jinxiniu168.com/h-nd-101-110_2166.html" target="_blank">风景园林工程</a>
+                                   <a href="http://www.hfjinxiniu.com/h-nd-95.html#_np=110_2456" target="_blank">建筑装饰工程</a> </dd>
+                              </dl>
+                            </div>
+                        </div>
+                      </li>
+                      
+                      
+                      <li> 房屋管理类 
+                        <div class="submenu">
+                            <div class="subleft">
+                              <dl>
+                                <dt></dt>
+                                <dd> <a href="http://www.hfjinxiniu.com/h-nd-112.html#_np=110_2179" target="_blank">物业管理资质</a> 
+                                <a href="http://www.hfjinxiniu.com/h-nd-113.html#_np=110_2180" target="_blank">房地产开发资质</a>  
+                                <a href="http://www.hfjinxiniu.com/h-nd-114.html#_np=110_2181" target="_blank">房地产经纪资质</a></dd>
+                              </dl>
+                            </div>
+                        </div>
+                      </li>
+                      
+                      
+                      <li> 工程设计类
+                        <div class="submenu">
+                            <div class="subleft">
+                              <dl>
+                                <dt></dt>
+                                <dd> <a href="http://www.hfjinxiniu.com/h-nd-115.html#_np=110_2186" target="_blank">工程设计资质</a> 
+                                 <a href="http://www.hfjinxiniu.com/h-nd-116.html#_np=110_2187" target="_blank">环境影响评价资质</a> 
+                                 </dd>
+                              </dl>
+                            </div>
+                        </div>
+                      </li>
+                      
+                      
+                      <li  id="a1"> 城市规划类
+                        <div class="submenu">
+                            <div class="subleft">
+                              <dl>
+                                <dt></dt>
+                                <dd> <a href="http://www.hfjinxiniu.com/h-nd-118.html#_np=110_2192" target="_blank">城乡规划编制资质</a> </dd>
+                              </dl>
+                              
+                            </div>
+                        </div>
+                        
+                      </li>
+                      {% endif %}    
+                </ul>
+            </div>
     </div><!-- /.container-fluid -->
-  </nav>
+ </nav>

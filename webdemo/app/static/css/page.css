@@ -1,0 +1,71 @@
+
+       
+        .menu { 
+           background: #DDD;
+            width: 1000px; 
+            height: 480px; 
+            margin: 0 0 0 30px ;}
+
+        .menu ul { 
+            width: 180px; 
+            box-sizing: border-box; 
+            position: relative; }
+        
+        .menu ul li { 
+            height:56px;
+            text-align:left; 
+            line-height: 50px; 
+            font-size: 15px; 
+            background-color:rgba(0,0,0,0.6);
+            z-index: 2;  
+            border-bottom: 1px solid #666;}
+        
+        .menu ul #a1{
+            border:none;
+        }
+        
+        .menu ul li a { 
+            color: white;
+        }
+        
+        .menu ul li:hover { 
+             border-right: 0; 
+             background-color:#333;
+             text-decoration:none;
+              cursor: pointer; }
+        
+        .menu ul li:hover a{
+            color:red; 
+        }
+        .menu ul li:hover .submenu 
+        {   display: block; 
+            margin-left:33px
+        }
+        .menu ul li .submenu 
+        { 
+            position: absolute; 
+            left: 146px; top: 0; 
+            width: 420px; height: 396px; 
+            border: 1px solid #DDD; 
+            box-shadow: 0 0 8px #DDD; 
+            -moz-box-shadow: 0 0 8px #DDD; 
+            -webkit-box-shadow: 0 0 8px #DDD; 
+            background-color: rgba(0,0,0,0.8); z-index: 3; 
+            display: none; }
+        .menu ul li .submenu .subleft 
+        { 
+            margin-left:0px; 
+            width: 420px; height: 300px; 
+            float: left; 
+            padding:25px; }
+        .menu ul li .submenu .subleft dl dd a 
+        { display: block; 
+            float: left; 
+            padding: 0  50px 25px 0; 
+            color: #707070; 
+            height: 14px; 
+            line-height: 14px; 
+            margin: 3px 0; 
+            font-size: 14px; 
+            text-decoration: none;}
+        

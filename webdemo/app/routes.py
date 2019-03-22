@@ -10,7 +10,10 @@ from models import User
 @app.route('/')
 @login_required
 def index():
-    return render_template('index.html')
+    Css = url_for("static",filename="css/page.css")
+    imgone = url_for("static",filename="images/img0.jpg")
+    logo = url_for("static",filename="images/logole.png")
+    return render_template('index.html', indexcss=Css,imgone=imgone,logo=logo)
 
 
 

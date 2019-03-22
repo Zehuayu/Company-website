@@ -7,17 +7,20 @@
     {% endif %}
 {% endblock %}
 
+
+
+
 {% block navbar %}
-  {% include 'navbar.html' %}
+  {% include 'head.html' %}
+{% include 'navbar.html' %}
 {% endblock %}
-
-
 
 
 {% block content %}
 <div class="container">
+    
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-10">
                 {% with messages = get_flashed_messages() %}
                     {% if messages %}
                         <ul class=flashes>
