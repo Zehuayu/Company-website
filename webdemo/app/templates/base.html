@@ -1,23 +1,41 @@
 {% extends "bootstrap/base.html" %}
 {% block title %}
     {% if title %}
-        {{ title }} | Flask App
+        {{ title }} | my cv station
     {% else %}
-        Flask app
+        my cv station
     {% endif %}
+    <head>
+            <title>Alias Colorlib &mdash; One Page Template for Personal/CV Website</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            
+            <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+            <link rel="stylesheet" href="css/animate.css">
+            <link rel="stylesheet" href="css/flexslider.css">
+            <link rel="stylesheet" href="fonts/icomoon/style.css">
+        
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <link rel="stylesheet" href="css/style.css">
+        
+            <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+        
+            
+          </head>
 {% endblock %}
 
 
 
 
 {% block navbar %}
-  {% include 'head.html' %}
+  
 {% include 'navbar.html' %}
 {% endblock %}
 
 
 {% block content %}
-<div class="container">
+<!-- <div class="container">
     
     <div class="row">
         <div class="col-md-10">
@@ -31,8 +49,129 @@
                         {% endif %}
               {% endwith %}
         </div>
-    </div>
-    {% block app_content %}
-    {% endblock %}
-</div>
+    </div> -->
+   
+<!-- </div> -->
+{% block login_content %}
 {% endblock %}
+{% block appview_content %}
+ <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+    <!-- 网页头 -->
+        <section class="site-hero" style="background-image: url(static/images/image1.png);" id="section-home" data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+              <div class="col-md-10 text-center">
+                <h1 class="site-heading site-animate">Hello, 我是 <strong>余泽华</strong></h1>
+                <p class="lead site-subheading mb-6 site-animate"> 大家好，我是一个准备重新步入职场的职场小白，在国外留学的两年里学习了很多新的技术也希望开始迎接新的职场挑战。</p>
+                <p><a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3">了解了解我</a></p>
+              </div>
+            </div>
+          </div>
+        </section> <!-- section -->
+    
+      <hr/>
+      <!-- 技能属性条 -->
+        <section class="site-section" id="section-about">
+          <div class="container">
+            <div class="row mb-6 align-items-center">
+              <div class="col-md-5 pr-md-4">
+                <img src="static/images/myself1.jpg" height="500px" width="400" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <div class="section-heading">
+                  <h2>About <strong>Me</strong></h2>
+                </div>
+                <p class="lead">我毕业于高威理工，一所建在海边的校园</p>
+                <p class="mb-5">在高威理工就读的两年里开始深度接触了code的魅力。从JAVA的严谨到Python的简洁再到C#的多元，每一种新技术都给我留下了深刻的记忆。依稀还记得只会简单的前端语言，到慢慢的完成了自己第一个网站第一个手机App第一个JAVA程序第一个PC应用。<br/>不断开发项目的同时
+                我也慢慢理解了团队的重要，收获修复bug的喜悦。</p>
+               <ul class="site-contact-details">
+              <li>
+                <span class="text-uppercase">邮箱</span>
+                yuzehua55@163.com
+                <br>
+                yuzehua555@gmail.com
+              </li>
+              <li>
+                <span class="text-uppercase">电话</span>
+                13133621868
+              </li>
+              
+              <li>
+                <span class="text-uppercase">地址</span>
+                江西省贵溪市 <br>
+                建设路  <br>
+               西二排
+              </li>
+            </ul>
+            {% if  current_user.is_authenticated %}
+    
+                <p>                
+                  <a href="static/cv/cvforyu.pdf" class="btn btn-secondary px-4 py-2 btn-sm">下载 我的简历</a>
+                </p>
+            {% endif %}
+              </div>
+            </div>
+            <hr/>
+        <div class="row pt-5">
+          <div class="col-md-3 mb-3">
+            <div class="section-heading">
+              <h2>Coding <strong>Skills</strong></h2>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="skill">
+              <h3>Web前端</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>.net</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>Flask</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>英文读写</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>Bootstrap</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<hr/>
+
+{% endblock %}
+{% block app_content %}
+{% endblock %}
+{% endblock %}
+

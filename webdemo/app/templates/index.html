@@ -1,13 +1,261 @@
 {% extends "base.html" %}
-
 {% block app_content %}
-   <link rel="stylesheet" href="{{indexcss}}" type="text/css" />
-   <!-- <div id='bannerV2' class='banner extBanner' fbHeight='400' defaultwidth='0' style=' height: 400px; background: none;' >	  
-</div> -->
+  
 
- 
+
+    <section class="site-section border-top pb-0"  id="section-services">
+      <div class="container">
+
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="section-heading text-center">
+              <h2>My <strong>Projects</strong> 我的项目经历</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-phone3"></span>
+              </span>
+              <h3 class="mb-4">My CV Station（网页）</h3>
+              <p>第一个项目隆重介绍下本网站，网站的是基于Flask微框架搭建的简易网站，并且通过flask的第三方插件（包括Flask-WTF，Flask-SQLAlchemy, Flask-Bootstram等），并且使用了jinja，flask-form等框架技术的网站</p>
+              <p><a href="https://github.com/Zehuayu/My_CV_Site" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-wallet2"></span>
+              </span>
+              <h3 class="mb-4">BMI健康指数（网页）</h3>
+              <p>此网站是入学GMIT的第一个团队项目，我主要负责该网站的前期设计和后期JS和CSS方面的工作，并且帮忙测试了数据库的稳定性。在网站设计过程中我还兼职处理一些PS素材方面的工作</p>
+              <p><a href="https://github.com/Zehuayu/BMI" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-lightbulb"></span>
+              </span>
+              <h3 class="mb-4">仓管系统及下单app开发（.net与xamarin）</h3>
+              <p>基于.Net开发仓库管理的App，实现在线下单管理，功能模块有云数据库连接、点击效果、显示效果等；
+                  使用UWP制作仓库管理软件，包括删减货物数量、货物分类等信息；
+                  撰写APP开发需求，精准定位，设计产品原型图及界面美化；
+                  搭建APP框架，用.Net实现技术编码，
+                 </p>
+              <p><a href="https://github.com/Zehuayu/Storage_Management_System" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-phone3"></span>
+              </span>
+              <h3 class="mb-4">Daily Note APP开发（UWP）</h3>
+              <p> 描述：通过.net框架完成的UWP日记APP；
+                  框架：MVVM 
+                  负责APP产品架构设计及功能设计，运用UWP平台调用GPS接口，通过调试在WIN、PC平台使用；
+                  撰写项目核心代码，进行单元和功能测试，调试设备；
+                  项目成绩：APP开发成功，上架在WIN软件商城；.</p>
+              <p><a href="https://github.com/Zehuayu/Mobile_app_project" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-wallet2"></span>
+              </span>
+              <h3 class="mb-4">平衡摩托（unity）</h3>
+              <p>这一款应用是基于momo框架开大的手机app，名字叫平衡摩托。在应用中使用了Myo传感器的接口，可以用Myo手势传感器控制摩托车前进后退加速制动和做各种高难度的动作。</p>
+              <p><a href="https://github.com/Zehuayu/Myo_Unity_Project" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-lightbulb"></span>
+              </span>
+              <h3 class="mb-4">文本比对（JAVA）</h3>
+              <p>该项目使用了severlet作为开发的基础，通过比对算法去比对两文的重复率。并且计算出重复率<p>
+                <a href="https://github.com/Zehuayu/A-JEE-Application-for-Measuring-Document-Similarity" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="site-hero" style="background-image: url(static/images/domain_bg.jpg);"  data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row intro-text align-items-center justify-content-center">
+          <div class="col-md-10 text-center">
+           
+            <p class="lead site-subheading mb-6 site-animate"> 大家好，我是一个准备重新步入职场的职场小白，在国外留学的两年里学习了很多新的技术也希望开始迎接新的职场挑战。</p>
+            
+          </div>
+        </div>
+      </div>
+    </section> <!-- section -->
+    <!-- .section -->
+
+    <section class="site-section bg-light " id="section-resume">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="section-heading text-center">
+              <h2>My <strong>Resume</strong>我的履历</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-5">Education</h2>
+
+            <div class="resume-item mb-4">
+                <span class="date"><span class="icon-calendar"></span> 高威，爱尔兰  2016年09月 –2018年09月；</span>
+                <h3>软件开发</h3>
+                <p>留学期间应聘过多次兼职和社区活动，并且作为志愿者参加过有高威市长和驻爱尔兰官员出席的中爱友谊活动</p>
+                <span class="school">高威理工</span>
+              </div>
+              <hr/>
+  
+          
+          
+              <div class="resume-item mb-4">
+              <span class="date"><span class="icon-calendar"></span> 南昌，中国  2011年09月 –2014年09月</span>
+              <h3>软件开发</h3>
+              <p>-2012年，获南昌大学科技学院二等优秀学生奖学金；2012年带领6人团体获南昌大学辩论赛冠军；
+                  2011年，获南昌大学科技学院二等优秀学生奖学金；2011年，获南昌大学科技学院一等优秀学生奖学金；</p>
+              <span class="school">南昌大学</span>
+            </div>
+
+           
+           
+          </div>
+          <div class="col-md-6">
+            
+
+            <h2 class="mb-5">Experience</h2>
+            <div class="resume-item mb-4">
+                <span class="date"><span class="icon-calendar"></span> 高威，爱尔兰 2017年7月 –2018年9月</span>
+                <h3>Jasmin market</h3>
+                <p>-负责公司项目的前端页面功能和交互的设计，制作亚洲online商品展示板块，促进超市市场推广；
+                    负责网站系统数据库日常管理，统计和备份相关数据信息，维护网站性能和安全，定期更新信息</p>
+                
+              </div>
+              <hr/>
+
+            <div class="resume-item mb-4">
+              <span class="date"><span class="icon-calendar"></span> 南昌，中国 2015年03月 –2016年04月</span>
+              <h3>南昌丰俍乐嘉信息咨询公司</h3>
+              <p>-前期跟随团队完成公司主页搭建工作，主要负责网站功能模块属性开发，包括 HTML标题，插入图片等；
+                  独立负责完善网页内容与功能的维护，更新阿里云框架信息</p>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <section class="site-section" id="section-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="section-heading text-center">
+              <h2>我的 <strong>故事</strong></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="blog-entry">
+              <a href="#"><img src="static/images/post1.jpg" alt="Image placeholder" class="img-fluid"></a>
+              <div class="blog-entry-text">
+                  <h3><a href="#">摄影是我最好的伙伴</a></h3>
+                  <p class="mb-4">在留学期间，摄影是我最重要的伙伴，相机通过每一次的快门记入下了每一个美好的瞬间，都会加载这一段美好的回忆在里面。每段旅程都会分割成一小段故事储存在每一张照片里面</p>
+                </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="blog-entry">
+              <a href="#"><img src="static/images/post2.jpg" alt="Image placeholder" class="img-fluid"></a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="blog-entry">
+              <a href="#"><img src="static/images/post3.jpg" alt="Image placeholder" class="img-fluid"></a>             
+            </div>
+          </div>
+ <hr/>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section bg-light" id="section-contact" style="background:rgb(51, 164, 216)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="section-heading text-center">
+              <h3>我的 <strong>信息</strong>，如果你觉得我适合就收了我吧</h3>
+            </div>
+          </div>
+          
+        
+          <div class="col-md-5 pl-md-5">
+            <h3 class="mb-5">My Contact Details</h3>
+            <ul class="site-contact-details">
+              <li>
+                <span class="text-uppercase">Email</span>
+                yuzehua55@163.com
+                <br>
+                yuzehua555@gmail.com
+              </li>
+              <li>
+                <span class="text-uppercase">Phone</span>
+                13133621868
+              </li>
+              
+              <li>
+                <span class="text-uppercase">Address</span>
+                江西省贵溪市 <br>
+                建设路  <br>
+               西二排
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    
+    
+
+    <script src="static/js/vendor/jquery.min.js"></script>
+    <script src="static/js/vendor/popper.min.js"></script>
+    <script src="static/js/vendor/bootstrap.min.js"></script>
+    
+    <script src="static/js/vendor/jquery.easing.1.3.js"></script>
+    <script src="static/js/vendor/jquery.stellar.min.js"></script>
+    <script src="static/js/vendor/jquery.waypoints.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+  </body>
+</html>
+
 {% endblock %}
-
-
-
-

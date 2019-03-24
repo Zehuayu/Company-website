@@ -1,8 +1,9 @@
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, send_file, send_from_directory
 from app import app, bcrypt, db
 from flask_login import login_user, login_required, current_user, logout_user
 from forms import RegisterForm, LoginForm, PasswordResetRequestForm, ResetPasswordForm
 from models import User
+import os
 
 
 
@@ -11,9 +12,12 @@ from models import User
 @login_required
 def index():
     Css = url_for("static",filename="css/page.css")
-    imgone = url_for("static",filename="images/img0.jpg")
-    logo = url_for("static",filename="images/logole.png")
-    return render_template('index.html', indexcss=Css,imgone=imgone,logo=logo)
+    bg1 = url_for("static",filename="images/bg1.jpg")
+    logo = url_for("static",filename="static/images/logole.png")
+    return render_template('index.html', indexcss=Css,bg1=bg1,logo=logo)
+
+
+  
 
 
 
@@ -82,7 +86,7 @@ def reset():
         email = form.email.data
         user =  User.query.filter_by(email=email).first()
         token = user.generate_password_token()
-        send_reset_password_mail(user, token)
+        # send_reset_password_mail(user, token)
         flash('email has send')
     return render_template('reset.html', form = form)
 
